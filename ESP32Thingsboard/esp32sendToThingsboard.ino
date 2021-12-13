@@ -4,27 +4,16 @@
 
 #define DHTPIN 32  
 #define DHTTYPE DHT11
-
-
 #define WIFI_AP             "JontesWiFi"
 #define WIFI_PASSWORD       "%casaDeJonte"
-
-// See https://thingsboard.io/docs/getting-started-guides/helloworld/
-// to understand how to obtain an access token
 #define TOKEN               "6uzolEGLNyRQ0O9F6I6h"
 #define THINGSBOARD_SERVER  "thingsboard.cloud"
-
-// Baud rate for debug serial
-#define SERIAL_DEBUG_BAUD   115200
-
+#define SERIAL_DEBUG_BAUD   115200 // Baud rate for debug serial
 
 DHT dht(DHTPIN, DHTTYPE); // initialize DHT sensor
-// Initialize ThingsBoard client
-WiFiClient espClient;
-// Initialize ThingsBoard instance
-ThingsBoard tb(espClient);
-// the Wifi radio's status
-int status = WL_IDLE_STATUS;
+WiFiClient espClient; // Initialize ThingsBoard client
+ThingsBoard tb(espClient); // Initialize ThingsBoard instance
+int status = WL_IDLE_STATUS; // the Wifi radio's status
 
 void setup() {
   // initialize serial for debugging
@@ -35,8 +24,6 @@ void setup() {
 }
 
 void loop() {
-
-
   if (WiFi.status() != WL_CONNECTED) {
     reconnect();
   }
