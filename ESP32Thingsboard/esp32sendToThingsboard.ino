@@ -15,6 +15,33 @@ WiFiClient espClient; // Initialize ThingsBoard client
 ThingsBoard tb(espClient); // Initialize ThingsBoard instance
 int status = WL_IDLE_STATUS; // the Wifi radio's status
 
+
+void InitWiFi(){
+  Serial.println("Connecting to Wifi ...");
+  WiFi.begin(WIFI_AP, WIFI_PASSWORD);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("Connected to: ");
+  Serial.println(WiFi.localIP());
+}
+
+void reconnect() {
+  // Loop until we're reconnected
+  status = WiFi.status();
+  if ( status != WL_CONNECTED) {
+    WiFi.begin(WIFI_AP, WIFI_PASSWORD);
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.print(".");
+    }
+    Serial.println("Connected to: ");
+    Serial.println(WiFi.localIP());
+  }
+}
+
+
 void setup() {
   // initialize serial for debugging
   Serial.begin(SERIAL_DEBUG_BAUD);
@@ -40,13 +67,14 @@ void loop() {
     }
   }
 
-
+  // variables to hold DHT sensor data
   float hum = dht.readHumidity();
   float temp = dht.readTemperature();
-    
+  //if there is no data  
   if(isnan(temp) || isinf(hum)) {
     Serial.println("Failed to read DATA from DHT");
     delay(1000); // purpose of delay is that hopefully after 1 sec it starts reading again
+  // if there is data continue and do this : 
   } else {
     Serial.println("Sending data to ThingsBoard: ");
     Serial.print("Humidity: ");
@@ -56,36 +84,12 @@ void loop() {
     Serial.print(temp);
     Serial.println(" C");
   }
-
-  tb.sendTelemetryInt("temperature", temp);
+  // Send data to Thingsboard as float
+  tb.sendTelemetryFloat("temperature", temp);
   tb.sendTelemetryFloat("humidity", hum);
 
   tb.loop();
-  delay(1000 * 10); // 10 sec delay
+  delay(1000 * 60); // 1 min delay
 }
 
-void InitWiFi()
-{
-  Serial.println("Connecting to Wifi ...");
-  WiFi.begin(WIFI_AP, WIFI_PASSWORD);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("Connected to: ");
-  Serial.println(WiFi.localIP());
-}
 
-void reconnect() {
-  // Loop until we're reconnected
-  status = WiFi.status();
-  if ( status != WL_CONNECTED) {
-    WiFi.begin(WIFI_AP, WIFI_PASSWORD);
-    while (WiFi.status() != WL_CONNECTED) {
-      delay(500);
-      Serial.print(".");
-    }
-    Serial.println("Connected to: ");
-    Serial.println(WiFi.localIP());
-  }
-}
