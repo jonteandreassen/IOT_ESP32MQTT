@@ -31,7 +31,7 @@ Val av kodspråk och tjänster:
 # Målgrupp:
   Min familj, tanken är också att till sommaren om tid finns  även göra sommarstugan smart med några andra features. Vi har ett par solpaneler där och samlar också in regnvatten så jag tänker att jag skulle vilja bygga en "plantskola", där vi på våren sår från inne i snickarboden och bevattning görs med hjälp av sensorer och pumpar. Vattnet tas från vatteninsamlingarna och strömen för att driva sensorerna och devicen tas från solen.
 
-## Typ av data:
+### Typ av data:
 
   ## Inomhusdata:
 
