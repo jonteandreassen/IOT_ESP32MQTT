@@ -22,4 +22,6 @@
 
 ## Software 
 
+    API usage, terms and conditions:
+
 ## Hardware
