@@ -49,7 +49,7 @@ Val av kodspråk och tjänster:
 
 # Hur data skall samlas in och hur detta uppnås:
 
-## Inomhusdata:
+### Inomhusdata:
 
 **DHT11 sensor** (temperatur och luftfuktighet) kopplad till en ESP32 som sparar in i varsin variabel och skickar sedan datan med MQTT till Thingsboards broker.
 
@@ -64,7 +64,7 @@ För att skicka från device till thingsboard så behöver man en access token o
 #define THINGSBOARD_SERVER  "thingsboard.cloud"
 ```
 
-## Utomhusdata:
+### Utomhusdata:
 
 **API concole app** som gör request mot YR.no, där man anger longitude och latitud samt skickar med en header för att kunna hämta data. Jag hämtar temperatur och lufttryck från APIet och skickar sedan datan med MQTT till Thingsboards broker.
 
