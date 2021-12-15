@@ -1,3 +1,6 @@
+# TA BORT ALL PERSONLIG INFO INNAN JAG GÖR REPOT PUBLIKT
+
+
 ## Smart landställe 1.0 Jonathan Andreassen
 
 ## Use case
