@@ -1,6 +1,6 @@
 ## Smart landställe 1.0 Jonathan Andreassen
 
-# Use case
+## Use case
 
 ## Bakgrund till projektet:
 
@@ -8,9 +8,9 @@ Min familj har en vinterstuga i fjällen, idén är att göra stugan smart och t
 
 Stugan ligger i Norge och i dagsläget så ställer vi temperaturen på elementen när vi kommer och åker därifrån, vilket inte är så smart i och med att det drar onödig ström, främst sommarhalvåret.
 
-![trysil1.0.jpg](Smart%20landsta%CC%88lle%201%200%20Jonathan%20Andreassen%202584a8a493204cd2955771a057614206/trysil1.0.jpg)
+![trysil1 0](https://user-images.githubusercontent.com/71496860/146207242-04b3fa62-d80d-4e95-80a4-76cee50e18ce.jpg)
 
-![dashboard.JPG](Smart%20landsta%CC%88lle%201%200%20Jonathan%20Andreassen%202584a8a493204cd2955771a057614206/dashboard.jpg)
+![dashboard](https://user-images.githubusercontent.com/71496860/146207331-8a24a6df-fafc-4143-9fc1-5b99bfd3689f.JPG)
 
 # Varför:
 Jag / familjen vill ha en dashboard / interface som visar temperatur och luftfuktighet inne i stugan samt en väderprognos. Så att vi lätt kan korrigera värmen i stugan via element eller värmefläkt 
