@@ -22,9 +22,9 @@ Tanken med det här projektet är att bygga grundstrukturen och en prototyp för
 
 Stugan ligger i Norge och i dagsläget så ställer vi värmen på elementen när vi kommer och åker därifrån, vilket inte är så smart i och med att det drar onödig energi, främst på sommarhalvåret.
 
-#
-
 Eftersom att stugan är en timmerstuga vill jag/vi därför ha koll på luftfuktigheten och eventuellt med hjälp av smarta uttag sätta på en extra värmefläkt vid behov.
+
+#
 
 ### Effekt / nytta:
 
@@ -104,6 +104,7 @@ För att skicka från device till thingsboard så behöver man en access token o
 #define TOKEN               " TOKEN from device in thingsboard"
 #define THINGSBOARD_SERVER  "thingsboard.cloud"
 ```
+#
 
 Utomhus Data:
 
@@ -133,6 +134,7 @@ headers = {
   'User-Agent': ' your email for exampel '
 }
 ```
+#
 
 **Snöfall concole app:**
 
@@ -153,6 +155,7 @@ tbIP = 'thingsboard.cloud'
 lat = " LATITUDE "
 lon = " LONGITUDE "
 ```
+#
 
 ### Källor och villkor för användning av YR.NO
 
@@ -161,6 +164,8 @@ lon = " LONGITUDE "
 
 >[https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
 >
+
+#
 
 ### Hårdvara jag använt:
 
