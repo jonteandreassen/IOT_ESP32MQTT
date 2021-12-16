@@ -14,6 +14,9 @@ Tanken med det här projektet är att bygga grundstrukturen och en prototyp för
 
 
 ### Dashboard i Thingsboard
+- Humidity mäts i %
+- Snowfall mäts i milimeter
+- Temperature mäts i Celcius
 
 ![dashboard](https://user-images.githubusercontent.com/71496860/146353433-65da705e-354b-4e1d-8d5f-600e4f47aee7.JPG)
 
