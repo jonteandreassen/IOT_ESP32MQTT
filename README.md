@@ -52,7 +52,7 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 > Jag använder mig av Thingsboard som IaaS (Infrastructure as a service), eftersom att jag använder deras verktyg för dashboarden samt lagring av data. Medans jag står för Applikation, Data, Runtime, Middleware och Operativsystem
 
-> Det är en smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
+> Det är ett smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
 
 **Raspberry pi:**
 
