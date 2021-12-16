@@ -8,17 +8,17 @@ import requests
 # Set this to the IP of your MQTT broker
 mqtt_thingsboard = "thingsboard.cloud"
 # Device auth token from device created in thingsboard
-device_token = "wtoqrxuKadHJi3E1YKOW"
+device_token = " ###### "
 # Set MQTT topic.
 topic = "v1/devices/me/telemetry"
-# Trysil Coordinates
-lat = "61.316900"
-lon = "12.259839"
+# Coordinates for usage of API
+lat = " ###### "
+lon = " ###### "
 # Yr.no API URL
 APIurl = "https://api.met.no/weatherapi/locationforecast/2.0/compact.json?lat={}&lon={}".format(lat, lon)
-# Header is required for using the API
+# Header is required for using the API check therms and conditions 
 headers = {
-  'User-Agent': 'jonte.andreassen@gmail.com'
+  'User-Agent': ' your email or other personal contact info'
 }
 
 if __name__ == '__main__':
