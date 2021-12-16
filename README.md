@@ -22,15 +22,21 @@ Tanken med det här projektet är att bygga grundstrukturen och en prototyp för
 
 Stugan ligger i Norge och i dagsläget så ställer vi värmen på elementen när vi kommer och åker därifrån, vilket inte är så smart i och med att det drar onödig energi, främst på sommarhalvåret.
 
+#
+
 Eftersom att stugan är en timmerstuga vill jag/vi därför ha koll på luftfuktigheten och eventuellt med hjälp av smarta uttag sätta på en extra värmefläkt vid behov.
 
 ### Effekt / nytta:
 
 Med de stigande elpriserna så ger detta också ekonomiska incitament till att ta stugan i nutiden med smarta tekniska uppgraderingar för att kontrollera värme & elförbrukningen.
 
+#
+
 ### Målgrupp:
 
 Min familj, tanken är också att till sommaren om tid finns  även göra sommarstugan smart med några andra features. Vi har ett par solpaneler där och samlar också in regnvatten så jag tänker att jag skulle vilja bygga en "plantskola", där vi på våren sår från inne i snickarboden och bevattning görs med hjälp av sensorer och pumpar. Vattnet tas från vatteninsamlingarna och strömen för att driva sensorerna och devicen tas från solen.
+
+# 
 
 ### Val av hård och mjukvara samt tjänster:
 
@@ -54,13 +60,15 @@ När jag väl är på plats i stugan kommer jag ladda över hela projektet och h
 
 I framtiden så tänker jag nog övergå till någon form av containerlösning och styra raspberryn över SSH från Stockholm för en smidigare hantering.
 
-**ESP32 microcontroller:**
+> **ESP32 microcontroller:**
 
 Jag valde den för att jag har den och tycker att den passar väldigt bra till ändamålet då jag behöver WiFi och en digital ingång på kortet för att koppla in min DHT11 sensor.
 
-**DHT11 temperatur och luftfuktighetssensor:**
+> **DHT11 temperatur och luftfuktighetssensor:**
 
 Jag hade en sedan innan och den mäter med tillräckligt bra precision för ändamålet.
+
+# 
 
 ### Typ av data:
 
