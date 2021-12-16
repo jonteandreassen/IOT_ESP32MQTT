@@ -40,33 +40,33 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 ### Val av hård och mjukvara samt tjänster:
 
-> **VS Code med Arduino extension :** 
+**VS Code med Arduino extension :** 
 
-Kombinationen valde jag för att jag ville testa att skriva Arduino C/C++ syntax i en ny miljö, både för att få intellisense men också för att jämföra mot Arduino IDE. Det funkade väldigt bra och hade inga större problem. Det känns däremot som att den totala tiden att kompilera en fil är lite längre.
+> Kombinationen valde jag för att jag ville testa att skriva Arduino C/C++ syntax i en ny miljö, både för att få intellisense men också för att jämföra mot Arduino IDE. Det > funkade väldigt bra och hade inga större problem. Det känns däremot som att den totala tiden att kompilera en fil är lite längre.
 
-> **Python:**
+**Python:**
 
-Jag har inte skrivit python sedan starten av våran utbildning och tänkte att det var dags att göra igen.
+> Jag har inte skrivit python sedan starten av våran utbildning och tänkte att det var dags att göra igen.
 
-> **Thingsboard:**
+**Thingsboard:**
 
-Jag använder mig av Thingsboard som både PaaS och SaaS, jag tror iaf att jag kan räkna det som en SaaS också eftersom att jag använder deras verktyg för att göra dashboarden.
+> Jag använder mig av Thingsboard som både PaaS och SaaS, jag tror iaf att jag kan räkna det som en SaaS också eftersom att jag använder deras verktyg för att göra dashboarden.
 
-Det är en smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
+> Det är en smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast > alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
 
-> **Raspberry pi:**
+**Raspberry pi:**
 
-När jag väl är på plats i stugan kommer jag ladda över hela projektet och hosta de på raspberryn. Jag kommer använda mig av Raspbian som OS och sedan köra alla scripten.
+> När jag väl är på plats i stugan kommer jag ladda över hela projektet och hosta de på raspberryn. Jag kommer använda mig av Raspbian som OS och sedan köra alla scripten.
 
-I framtiden så tänker jag nog övergå till någon form av containerlösning och styra raspberryn över SSH från Stockholm för en smidigare hantering.
+> I framtiden så tänker jag nog övergå till någon form av containerlösning och styra raspberryn över SSH från Stockholm för en smidigare hantering.
 
-> **ESP32 microcontroller:**
+**ESP32 microcontroller:**
 
-Jag valde den för att jag har den och tycker att den passar väldigt bra till ändamålet då jag behöver WiFi och en digital ingång på kortet för att koppla in min DHT11 sensor.
+> Jag valde den för att jag har den och tycker att den passar väldigt bra till ändamålet då jag behöver WiFi och en digital ingång på kortet för att koppla in min DHT11 sensor.
 
-> **DHT11 temperatur och luftfuktighetssensor:**
+**DHT11 temperatur och luftfuktighetssensor:**
 
-Jag hade en sedan innan och den mäter med tillräckligt bra precision för ändamålet.
+> Jag hade en sedan innan och den mäter med tillräckligt bra precision för ändamålet.
 
 # 
 
