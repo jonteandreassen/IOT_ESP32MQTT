@@ -1,6 +1,6 @@
 # TA BORT ALL PERSONLIG INFO INNAN JAG GÖR REPOT PUBLIKT
 
-
+https://royal-venus-cfd.notion.site/Smart-landst-lle-1-0-Jonathan-Andreassen-67fd61281c6042c68160e64e1b756c9e
 ## Smart landställe 1.0 Jonathan Andreassen
 
 ## Use case
