@@ -12,7 +12,7 @@ Tanken med det här projektet är att bygga grundstrukturen och en prototyp för
 
 ### Systemskiss
 
-![trysil1.0.jpg](Smart%20landsta%CC%88lle%201%200%20Jonathan%20Andreassen%202584a8a493204cd2955771a057614206/trysil1.0.jpg)
+https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/trysil1.0.jpg
 
 ### Dashboard i Thingsboard
 
