@@ -42,7 +42,7 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 **VS Code med Arduino extension :** 
 
-> Kombinationen valde jag för att jag ville testa att skriva Arduino C/C++ syntax i en ny miljö, både för att få intellisense men också för att jämföra mot Arduino IDE. Det > funkade väldigt bra och hade inga större problem. Det känns däremot som att den totala tiden att kompilera en fil är lite längre.
+> Kombinationen valde jag för att jag ville testa att skriva Arduino C/C++ syntax i en ny miljö, både för att få intellisense men också för att jämföra mot Arduino IDE. Det  funkade väldigt bra och hade inga större problem. Det känns däremot som att den totala tiden att kompilera en fil är lite längre.
 
 **Python:**
 
@@ -52,7 +52,7 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 > Jag använder mig av Thingsboard som både PaaS och SaaS, jag tror iaf att jag kan räkna det som en SaaS också eftersom att jag använder deras verktyg för att göra dashboarden.
 
-> Det är en smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast > alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
+> Det är en smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
 
 **Raspberry pi:**
 
