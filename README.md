@@ -4,9 +4,7 @@
 
 ### Bakgrund till projektet:
 
-Min familj har en vinterstuga i fjällen, idén är att ta stugan från dåtiden och in i nutid/framtid genom att implementera "smarta" lösningar, för att kunna ha kontroll över energiförbrukning och
-
-klimatet i huset.
+Min familj har en vinterstuga i fjällen, idén är att ta stugan från dåtiden och in i nutid/framtid genom att implementera "smarta" lösningar, för att kunna ha kontroll över energiförbrukning och klimatet i huset.
 
 Tanken med det här projektet är att bygga grundstrukturen och en prototyp för att göra stugan "smart", och att i framtiden kunna bygga ut projektet med relevanta tekniska uppgraderingar. Exempelvis värmeslinga på taken för att smälta snö som kopplas till ett smart eluttag. 
 
@@ -166,4 +164,8 @@ lon = " LONGITUDE "
 > 
 
 > Raspberry pi 3b+
->
+
+
+> Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
+  elementen och temperaturvärdet som DHT11 sensorn läser in. 
+> 
