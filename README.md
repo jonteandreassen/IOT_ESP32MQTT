@@ -66,18 +66,18 @@ Jag hade en sedan innan och den mäter med tillräckligt bra precision för änd
 
 Inomhus Data:
 
-Temperatur
-
-Luftfuktighet 
-
+>Temperatur
+>
+>Luftfuktighet 
+>
 Utomhus Data:
 
-Temperatur
-
-Luftryck 
-
-Snöfall
-
+>Temperatur
+>
+>Luftryck 
+>
+>Snöfall
+>
 ### Hur data skall samlas in och hur detta uppnås:
 
 Inomhus Data:
@@ -148,9 +148,11 @@ lon = " LONGITUDE "
 
 ### Källor och villkor för användning av YR.NO
 
-[https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
+> [https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
+>
 
-[https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
+>[https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
+>
 
 ### Hårdvara jag använt:
 
