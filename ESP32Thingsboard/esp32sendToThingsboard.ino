@@ -4,9 +4,9 @@
 
 #define DHTPIN 32  
 #define DHTTYPE DHT11
-#define WIFI_AP             "JontesWiFi"
-#define WIFI_PASSWORD       "%casaDeJonte"
-#define TOKEN               "6uzolEGLNyRQ0O9F6I6h"
+#define WIFI_AP             " ##### "  // SSID
+#define WIFI_PASSWORD       " ##### "  
+#define TOKEN               " ##### " // Device token generated at thingsboard
 #define THINGSBOARD_SERVER  "thingsboard.cloud"
 #define SERIAL_DEBUG_BAUD   115200 // Baud rate for debug serial
 
