@@ -4,12 +4,13 @@ import random
 
 
 
-
-device_token = 'AkPgmtsFpTl1cREzMGEr'
+# Your device token generated from device at thingsboard
+device_token = ' ###### '
 tbIP = 'thingsboard.cloud'
 
-lat = "61.316900"
-lon = "12.259839"
+# Coordinates used for dashboard
+lat = " ###### "
+lon = " ###### "
 
 
 if __name__ == '__main__':
