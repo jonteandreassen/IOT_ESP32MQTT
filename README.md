@@ -69,7 +69,7 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 **DHT11 temperatur och luftfuktighetssensor:**
 
-> Jag hade en sedan innan och den mäter med tillräckligt bra precision för ändamålet.
+> Jag hade en sen innan och den mäter med tillräckligt bra precision för ändamålet.
 
 # 
 
