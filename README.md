@@ -75,19 +75,19 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 ### Typ av data:
 
-Inomhus Data:
+>Inomhus Data:
 
->Temperatur
+> - Temperatur
 >
->Luftfuktighet 
+> - Luftfuktighet 
 >
 Utomhus Data:
 
->Temperatur
+> - Temperatur
 >
->Luftryck 
+> - Luftryck 
 >
->Snöfall
+> - Snöfall
 >
 ### Hur data skall samlas in och hur detta uppnås:
 
