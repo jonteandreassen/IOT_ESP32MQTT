@@ -93,7 +93,7 @@ Utomhus Data:
 
 Inomhus Data:
 
-** ESP32 kod [ESP32] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino) :**
+** ESP32 kod [ESP32] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino "ESP32") :**
 
 Mäter temperatur och luftfuktighet som sparas in i varsin variabel och skickar sedan datan med MQTT till Thingsboards broker.
 
@@ -111,7 +111,7 @@ För att skicka från device till thingsboard så behöver man en access token o
 
 Utomhus Data:
 
-** Yr.no kod [YR.no API kod] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py) :**
+** Yr.no kod [YR.no API kod] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py "YR.no API kod") :**
 
 Gör request mot YR.no, där man anger longitud och latitud samt skickar med en header för att kunna hämta data. Jag hämtar temperatur och lufttryck från APIet och skickar sedan data med MQTT till Thingsboards broker.
 
@@ -139,7 +139,7 @@ headers = {
 ```
 #
 
-** Simulerad snödata [Make it snow] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py) :**
+** Simulerad snödata [Make it snow] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py "Make it snow") :**
 
 Jag skapar upp en variabel snowfall som slumpar fram ett flyttal mellan 00.00 - 40.00 som symboliserar snöfall i millimeter. Detta skickas sedan via MQTT till Thingsboards broker.
 
