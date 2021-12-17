@@ -93,7 +93,7 @@ Utomhus Data:
 
 Inomhus Data:
 
-** https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino :**
+** ESP32 kod [ESP32] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino) :**
 
 Mäter temperatur och luftfuktighet som sparas in i varsin variabel och skickar sedan datan med MQTT till Thingsboards broker.
 
@@ -111,7 +111,7 @@ För att skicka från device till thingsboard så behöver man en access token o
 
 Utomhus Data:
 
-** https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py :**
+** Yr.no kod [YR.no API kod] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py) :**
 
 Gör request mot YR.no, där man anger longitud och latitud samt skickar med en header för att kunna hämta data. Jag hämtar temperatur och lufttryck från APIet och skickar sedan data med MQTT till Thingsboards broker.
 
@@ -139,7 +139,7 @@ headers = {
 ```
 #
 
-** https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py :**
+** Simulerad snödata [Make it snow] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py) :**
 
 Jag skapar upp en variabel snowfall som slumpar fram ett flyttal mellan 00.00 - 40.00 som symboliserar snöfall i millimeter. Detta skickas sedan via MQTT till Thingsboards broker.
 
@@ -164,10 +164,8 @@ lon = " LONGITUDE "
 
 > - [https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
 >
-
 > - [https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
 >
-
 > - https://thingsboard.io/docs/reference/python-client-sdk/
 >
 
