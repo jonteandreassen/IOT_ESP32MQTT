@@ -1,12 +1,20 @@
-# Smart landställe 1.0 Jonathan Andreassen
+# Projektarbete Smart vinterstuga
+ #### *Gjord av:  Jonathan Andreassen 2021*
+ #### *Skola: Nackademin*
+ #### *Program: IoT utvecklare*
 
 # Use case
 
 ### Bakgrund till projektet:
 
-Min familj har en vinterstuga i fjällen, idén är att ta stugan från dåtiden och in i nutid/framtid genom att implementera "smarta" lösningar, för att kunna ha kontroll över energiförbrukning och klimatet i huset.
+>Min familj har en vinterstuga i fjällen, idén är att ta stugan från dåtiden och in i nutid/framtid genom att implementera "smarta" lösningar, för att kunna ha kontroll över energiförbrukning och klimatet i huset.
+>
+>Tanken med det här projektet är att bygga grundstrukturen och en prototyp för att göra stugan "smart", och att i framtiden kunna bygga ut projektet med relevanta tekniska uppgraderingar. Exempelvis värmeslinga på taken för att smälta snö som kopplas till ett smart eluttag. 
+>
+#### Framtid to be continued: 
+>Hela projektet utgår och har testat enbart i min lägenhet då jag inte har kunnat åka till stugan ännu. Väl på plats är tanken att flytta över projektet till en Raspberry Pi som skall köra all kod. 
 
-Tanken med det här projektet är att bygga grundstrukturen och en prototyp för att göra stugan "smart", och att i framtiden kunna bygga ut projektet med relevanta tekniska uppgraderingar. Exempelvis värmeslinga på taken för att smälta snö som kopplas till ett smart eluttag. 
+#
 
 ### Systemskiss
 
@@ -14,30 +22,30 @@ Tanken med det här projektet är att bygga grundstrukturen och en prototyp för
 
 
 ### Dashboard i Thingsboard
-- Humidity mäts i %
-- Snowfall mäts i milimeter
-- Temperature mäts i Celcius
+>- Humidity mäts i %
+>- Snowfall mäts i milimeter
+>- Temperature mäts i Celcius
 
 ![dashboard](https://user-images.githubusercontent.com/71496860/146353433-65da705e-354b-4e1d-8d5f-600e4f47aee7.JPG)
 
 
 ### Varför:
 
-Stugan ligger i Norge och i dagsläget så ställer vi värmen på elementen när vi kommer och åker därifrån, vilket inte är så smart i och med att det drar onödig energi, främst på sommarhalvåret.
-
-Eftersom att stugan är en timmerstuga vill jag/vi därför ha koll på luftfuktigheten och eventuellt med hjälp av smarta uttag sätta på en extra värmefläkt vid behov.
+>Stugan ligger i Norge och i dagsläget så ställer vi värmen på elementen när vi kommer och åker därifrån, vilket inte är så smart i och med att det drar onödig energi, främst på sommarhalvåret.
+>
+>Eftersom att stugan är en timmerstuga vill jag/vi därför ha koll på luftfuktigheten och eventuellt med hjälp av smarta uttag sätta på en extra värmefläkt vid behov.
 
 #
 
 ### Effekt / nytta:
 
-Med de stigande elpriserna så ger detta också ekonomiska incitament till att ta stugan i nutiden med smarta tekniska uppgraderingar för att kontrollera värme & elförbrukningen.
+>Med de stigande elpriserna så ger detta också ekonomiska incitament till att ta stugan i nutiden med smarta tekniska uppgraderingar för att kontrollera värme & elförbrukningen.
 
 #
 
 ### Målgrupp:
 
-Min familj, tanken är också att till sommaren om tid finns  även göra sommarstugan smart med några andra features. Vi har ett par solpaneler där och samlar också in regnvatten så jag tänker att jag skulle vilja bygga en "plantskola", där vi på våren sår från inne i snickarboden och bevattning görs med hjälp av sensorer och pumpar. Vattnet tas från vatteninsamlingarna och strömen för att driva sensorerna och devicen tas från solen.
+>Min familj, tanken är också att till sommaren om tid finns  även göra sommarstugan smart med några andra features. Vi har ett par solpaneler där och samlar också in regnvatten så jag tänker att jag skulle vilja bygga en "plantskola", där vi på våren sår från inne i snickarboden och bevattning görs med hjälp av sensorer och pumpar. Vattnet tas från vatteninsamlingarna och strömen för att driva sensorerna och devicen tas från solen.
 
 # 
 
@@ -54,13 +62,13 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 **Thingsboard:**
 
 > Jag använder mig av Thingsboard som IaaS (Infrastructure as a service), eftersom att jag använder deras verktyg för dashboarden samt lagring av data. Medans jag står för Applikation, Data, Runtime, Middleware och Operativsystem
-
+>
 > Det är ett smidigt verktyg att använda för att både lagra och visualisera data från sina sensorer. Jag hade inga problem alls att skicka in data från mina 3 sensorer, även fast alla 3 skickar in data på lite olika sätt även om alla är  över MQTT som protokol.
 
 **Raspberry pi:**
 
 > När jag väl är på plats i stugan kommer jag ladda över hela projektet och hosta de på raspberryn. Jag kommer använda mig av Raspbian som OS och sedan köra alla scripten.
-
+>
 > I framtiden så tänker jag nog övergå till någon form av containerlösning och styra raspberryn över SSH från Stockholm för en smidigare hantering.
 
 **ESP32 microcontroller:**
@@ -74,30 +82,30 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 # 
 
 ### Typ av data:
-
 Inomhus Data:
-
 > - Temperatur
 >
 > - Luftfuktighet 
 >
 Utomhus Data:
-
 > - Temperatur
 >
 > - Luftryck 
 >
 > - Snöfall
 >
+
+#
+
 ### Hur data skall samlas in och hur detta uppnås:
 
-Inomhus Data:
+#### *Inomhus Data:*
 
-** ESP32 kod [ESP32] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino "ESP32") :**
+##### *Länk till kod: [ESP32 kod](https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/ESP32Thingsboard/esp32sendToThingsboard.ino "ESP32")*
 
-Mäter temperatur och luftfuktighet som sparas in i varsin variabel och skickar sedan datan med MQTT till Thingsboards broker.
-
-För att skicka från device till thingsboard så behöver man en access token och en url med i koden exempel:
+>Mäter temperatur och luftfuktighet som sparas in i varsin variabel och skickar sedan datan med MQTT till Thingsboards broker.
+>
+>För att skicka från device till thingsboard så behöver man en access token och en url med i koden exempel:
 
 ```arduino
 #include "ThingsBoard.h"
@@ -109,11 +117,11 @@ För att skicka från device till thingsboard så behöver man en access token o
 ```
 #
 
-Utomhus Data:
+##### *Utomhus Data:*
 
-** Yr.no kod [YR.no API kod] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py "YR.no API kod") :**
+##### *Länk till kod: [YR.no API kod](https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/YR.no/getData.py "YR.no API kod")*
 
-Gör request mot YR.no, där man anger longitud och latitud samt skickar med en header för att kunna hämta data. Jag hämtar temperatur och lufttryck från APIet och skickar sedan data med MQTT till Thingsboards broker.
+>Gör request mot YR.no, där man anger longitud och latitud samt skickar med en header för att kunna hämta data. Jag hämtar temperatur och lufttryck från APIet och skickar sedan data med MQTT till Thingsboards broker.
 
 ```python
 import time
@@ -137,13 +145,13 @@ headers = {
   'User-Agent': ' your email for exampel '
 }
 ```
-#
 
-** Simulerad snödata [Make it snow] (https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py "Make it snow") :**
 
-Jag skapar upp en variabel snowfall som slumpar fram ett flyttal mellan 00.00 - 40.00 som symboliserar snöfall i millimeter. Detta skickas sedan via MQTT till Thingsboards broker.
+##### *Länk till kod: [Make it snow](https://github.com/jonteandreassen/IOT_ESP32MQTT/blob/main/RandomSnow/SendSnow.py "Make it snow")*
 
-För den här console appen använde jag mig av en annan import av MQTT som var rekommenderad av thingsboard och för att testa något nytt.
+>Jag skapar upp en variabel snowfall som slumpar fram ett flyttal mellan 00.00 - 40.00 som symboliserar snöfall i millimeter. Detta skickas sedan via MQTT till Thingsboards broker.
+>
+>För den här console appen använde jag mig av en annan import av MQTT som var rekommenderad av thingsboard och för att testa något nytt.
 
 ```python
 from tb_device_mqtt import TBDeviceMqttClient, TBPublishInfo
@@ -160,14 +168,11 @@ lon = " LONGITUDE "
 ```
 #
 
-### Källor och villkor för användning av YR.NO
+#### Källor och villkor för användning av API
 
-> - [https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
->
-> - [https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
->
-> - https://thingsboard.io/docs/reference/python-client-sdk/
->
+- [YR.no terms of Service](https://developer.yr.no/doc/TermsOfService/)
+- [YR.no Getting started](https://developer.yr.no/doc/GettingStarted/)
+- [Thingsboard Python SDK](https://thingsboard.io/docs/reference/python-client-sdk/)
 
 #
 
@@ -179,8 +184,13 @@ lon = " LONGITUDE "
 > 
 > - Wifi router
 > 
-> - Raspberry pi 3b+
+> - Raspberry pi 3b+ (Kommer att användas på plats)
 >
 > - Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
   elementen och temperaturvärdet som DHT11 sensorn läser in. 
+
+#
+
  
+
+ Copyright &copy; Jonathan Andreassen
