@@ -75,7 +75,7 @@ Min familj, tanken är också att till sommaren om tid finns  även göra sommar
 
 ### Typ av data:
 
->Inomhus Data:
+Inomhus Data:
 
 > - Temperatur
 >
@@ -162,28 +162,27 @@ lon = " LONGITUDE "
 
 ### Källor och villkor för användning av YR.NO
 
-> [https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
+> - [https://developer.yr.no/doc/TermsOfService/](https://developer.yr.no/doc/TermsOfService/)
 >
 
->[https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
+> - [https://developer.yr.no/doc/GettingStarted/](https://developer.yr.no/doc/GettingStarted/)
+>
+
+> - https://thingsboard.io/docs/reference/python-client-sdk/
 >
 
 #
 
 ### Hårdvara jag använt:
 
-> ESP32
+> - ESP32
 > 
-
-> DHT11
+> - DHT11
 > 
-
-> Wifi router
+> - Wifi router
 > 
-
-> Raspberry pi 3b+
-
-
-> Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
+> - Raspberry pi 3b+
+>
+> - Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
   elementen och temperaturvärdet som DHT11 sensorn läser in. 
-> 
+ 
