@@ -22,9 +22,9 @@
 
 
 ### Dashboard i Thingsboard
->- Humidity mäts i %
->- Snowfall mäts i milimeter
->- Temperature mäts i Celcius
+> Humidity mäts i %
+> Snowfall mäts i milimeter
+> Temperature mäts i Celcius
 
 ![dashboard](https://user-images.githubusercontent.com/71496860/146353433-65da705e-354b-4e1d-8d5f-600e4f47aee7.JPG)
 
@@ -83,16 +83,16 @@
 
 ### Typ av data:
 Inomhus Data:
-> - Temperatur
+> Temperatur
 >
-> - Luftfuktighet 
+> Luftfuktighet 
 >
 Utomhus Data:
-> - Temperatur
+> Temperatur
 >
-> - Luftryck 
+> Luftryck 
 >
-> - Snöfall
+> Snöfall
 >
 
 #
@@ -178,15 +178,15 @@ lon = " LONGITUDE "
 
 ### Hårdvara jag använt:
 
-> - ESP32
+> ESP32
 > 
-> - DHT11
+> DHT11
 > 
-> - Wifi router
+> Wifi router
 > 
-> - Raspberry pi 3b+ (Kommer att användas på plats)
+> Raspberry pi 3b+ (Kommer att användas på plats)
 >
-> - Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
+> ! Wifi element, vi har två i stugan men i dagsläget är jag osäker på hur jag kan använda dem men jag skulle vilja kunna ha en symbios mellan
   elementen och temperaturvärdet som DHT11 sensorn läser in. 
 
 #
