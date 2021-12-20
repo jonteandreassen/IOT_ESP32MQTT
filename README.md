@@ -172,9 +172,11 @@ lon = " LONGITUDE "
 
 #### Källor och villkor för användning av API
 
-- [YR.no terms of Service](https://developer.yr.no/doc/TermsOfService/)
-- [YR.no Getting started](https://developer.yr.no/doc/GettingStarted/)
-- [Thingsboard Python SDK](https://thingsboard.io/docs/reference/python-client-sdk/)
+> [YR.no terms of Service](https://developer.yr.no/doc/TermsOfService/)
+> 
+> [YR.no Getting started](https://developer.yr.no/doc/GettingStarted/)
+> 
+> [Thingsboard Python SDK](https://thingsboard.io/docs/reference/python-client-sdk/)
 
 #
 
